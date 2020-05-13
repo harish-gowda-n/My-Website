@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Harish Gowda N</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@700&family=Montserrat:wght@500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6e2e540c61.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+    <nav class="navbar-expand-lg navbar-light navbar-custom smart-scroll container" >
+        <div class="row">
+          <div class="col-4" style='text-align: left;'>
+            <a class="navbar-brand" href="">
+              <img src="images/me.png" alt="" height="80px">
+            </a>
+          </div>
+          <div class="col-8 d-flex align-items-end">
+            <ul class="navbar-nav ml-auto row" style="width: 60%">
+              <li class="nav-item col-4">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item col-4">
+                <a class="nav-link" href="#contact-form" onclick="expand();">Contact</a>
+              </li>
+              <li class="nav-item col-4">
+                <a class="nav-link" href="">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Name and background image -->
+  <div class="topcont" id="top">
+    <img class="bg-img" src="images/cityscapes2ed.jpg" alt="">
+    <span class="title">
+      <h1>I am Harish.</h1>
+      <h2>a <u>pro</u>grammer.</h2>
+    </span>
+  </div>
+  <!-- Middle Container section with profile and Skills  -->
+  <div class="middle-container">
+    <div class="profile">
+      <img class="myimg" src="images/me.png" alt="my photo">
+      <h2>Hello!</h2>
+      <p class="intro">I am a budding Computer programmer based in Bengaluru.<br> I love to develop software applications. </p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2><u>My Skills</u> :</h2>
+      <div class="skill-row">
+        <img class="devimg" src="images/dev.png" alt="">
+        <h3>App Development</h3>
+        <p>I love to design and build application softwares. Following are some of my specializations : </p>
+        <ul class="specializations">
+          <li>Web App Development</li>
+          <li>Android App Development</li>
+          <li>iOS App Development</li>
+        </ul>
+      </div>
+      <br><br>
+      <div class="skill-row">
+        <img class="camimg" src="images/camera.png" alt="">
+        <h3>Photography</h3>
+        <p>
+          Photography is my passion. It makes me explore the unseen, go on adventures and have a creative approach to life. <br>
+          Landscapes and Wildlife are my specializations.<br>
+            <a href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Click here</a> to take a look at my photography works.
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="contact-container" id="contact-me">
+      <h2>Get In Touch,</h2>
+      <h3>Let's do something amazing together!!</h3>
+      <p>
+        I'm always in for a collaboration. Mail me about your project and I'll get back to you ASAP!!<br>
+        Or you can share me your works and adventures too!!😉
+      </p>
+      <!-- <button type="button" class="contact" onclick="sendEmail();">CONTACT ME</button> -->
+      <button class="btn contact collapser" type="button" data-toggle="collapse" data-target="#contact-form" aria-expanded="false">
+    CONTACT ME
+  </button>
+</p>
+<div class="collapse" id="contact-form">
+  <form>
+    <br>
+    <div class="form-group">
+    <label>Your Name : </label>
+    <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+    <label>Your Message : </label>
+    <textarea class="form-control" id="message" rows="4" cols="80"></textarea>
+    </div>
+    <div class="form-group send">
+      <button class="contact" type="button" onclick="sendEmail();">Send</button>
+    </div>
+  </form>
+</div>
+    </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Instagram <i class="fab fa-instagram"></i></a>
+    <a class="footer-link" href="https://www.linkedin.com/in/harish-gowda-n">LinkedIn <i class="fab fa-linkedin"></i></a>
+    <a class="footer-link" href="https://twitter.com/Harish_Gowda_N">Twitter <i class="fab fa-twitter"></i></a>
+    <a class="footer-link" href="https://github.com/harish-gowda-n">GitHub <i class="fab fa-github"></i></a>
+    <p class="copyrights">© 2020 Harish Gowda.</p>
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
