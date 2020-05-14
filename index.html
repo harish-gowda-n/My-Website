@@ -16,28 +16,29 @@
 
 <body>
   <!-- Navigation Bar -->
-    <nav class="navbar-expand-lg navbar-light navbar-custom smart-scroll container" >
-        <div class="row">
-          <div class="col-4" style='text-align: left;'>
-            <a class="navbar-brand" href="">
-              <img src="images/me.png" alt="" height="80px">
-            </a>
-          </div>
-          <div class="col-8 d-flex align-items-end">
-            <ul class="navbar-nav ml-auto row" style="width: 60%">
-              <li class="nav-item col-4">
+  <div class="container">
+    <nav class="navbar navbar-light navbar-expand-md justify-content-center smart-scroll">
+    <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+        <img src="images/me.png" alt="" height="60vw">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">About</a>
-              </li>
-              <li class="nav-item col-4">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#contact-form" onclick="expand();">Contact</a>
-              </li>
-              <li class="nav-item col-4">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="">Resume</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
     <!-- Name and background image -->
   <div class="topcont" id="top">
     <img class="bg-img" src="images/cityscapes2ed.jpg" alt="">
@@ -56,25 +57,41 @@
     <hr>
     <div class="skills">
       <h2><u>My Skills</u> :</h2>
-      <div class="skill-row">
-        <img class="devimg" src="images/dev.png" alt="">
+      <div class="skill-row container">
+        <div class="row">
+          <div class="col-3 style='text-align: center;'">
+              <img class="devimg" src="images/dev.png" alt="">
+            </div>
+        <div class="col-9">
         <h3>App Development</h3>
         <p>I love to design and build application softwares. Following are some of my specializations : </p>
-        <ul class="specializations">
-          <li>Web App Development</li>
-          <li>Android App Development</li>
-          <li>iOS App Development</li>
-        </ul>
+        <table>
+          <tr>
+            <th>Web App   <i class="fas fa-file-code fa-2x"></i></th>
+            <th style="padding: 0 4vw 0 4vw;">Android  <i class="fab fa-android fa-2x" style="color: #3DDC84"></i></th>
+            <th>iOS  <i class="fab fa-apple fa-2x"></i></th>
+          </tr>
+        </table>
       </div>
+      </div>
+    </div>
       <br><br>
-      <div class="skill-row">
-        <img class="camimg" src="images/camera.png" alt="">
-        <h3>Photography</h3>
-        <p>
-          Photography is my passion. It makes me explore the unseen, go on adventures and have a creative approach to life. <br>
-          Landscapes and Wildlife are my specializations.<br>
-            <a href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Click here</a> to take a look at my photography works.
-        </p>
+      <div class="skill-row container">
+        <div class="row">
+          <div class="col-9">
+            <h3>Photography</h3>
+            <p>
+              Photography is my passion. It makes me explore the unseen, go on adventures and have a creative approach to life.
+              Landscapes and Wildlife are my specializations.<br>
+                <a href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Click here</a> to take a look at my photography works.
+            </p>
+          </div>
+          <div class="col-3" style="text-align: center">
+            <div class="">
+              <img class="camimg" src="images/camera.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>

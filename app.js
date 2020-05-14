@@ -11,6 +11,7 @@ if ($('.smart-scroll').length > 0) {
 
     if(scroll_top == 0){
       $('.smart-scroll').removeClass('trans');
+      $('.smart-scroll').css({opacity: 1});
     }
 
     else if (scroll_top < last_scroll_top) {
@@ -19,6 +20,7 @@ if ($('.smart-scroll').length > 0) {
 
     else {
       $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+      $('.smart-scroll').css({opacity: 0.75});
     }
     last_scroll_top = scroll_top;
   });
@@ -35,3 +37,11 @@ function expand(){
 }
 
 }
+
+$('#collapsingNavbar3').on('show.bs.collapse', function () {
+  $('.smart-scroll').css({opacity: 1});
+});
+
+$('#collapsingNavbar3').on('hide.bs.collapse', function () {
+  $('.smart-scroll').css({opacity: 0.75});
+});
