@@ -199,8 +199,8 @@ form{
 
 .bottom-container {
   background-color: #66BFBF;
-  padding-top: 4%;
-  padding-bottom: 5px;
+  padding-top: 10%;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -213,7 +213,7 @@ form{
 .footer-link {
   color: #e3fdfd;
   margin: auto 2%;
-
+  font-size: 14px;
 }
 
 a:hover {

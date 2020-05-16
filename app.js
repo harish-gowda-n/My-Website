@@ -1,5 +1,5 @@
 
-$('body').css('padding-top', $('.navbar-custom').outerHeight() + 'px')
+$('body').css('padding-top', $('.navbar-custom').outerHeight() + 'px');
 
 if ($('.smart-scroll').length > 0) {
 
@@ -11,7 +11,7 @@ if ($('.smart-scroll').length > 0) {
 
     if(scroll_top == 0){
       $('.smart-scroll').removeClass('trans');
-      $('.smart-scroll').css({opacity: 1});
+      $('.smart-scroll').css({"background-color": "#e3fdfd", "opacity": "1"});
     }
 
     else if (scroll_top < last_scroll_top) {
@@ -24,24 +24,28 @@ if ($('.smart-scroll').length > 0) {
     }
     last_scroll_top = scroll_top;
   });
+}
 
   function sendEmail()
 {
     const name = $('#name').val();
     const msg = $('#message').val();
-    window.location = "mailto:nharishg12@gmail.com?subject=Contact from website&body=Name - "+name+"%0d%0aMessage - %0d%0a"+msg;
+    window.location = "mailto:nharishg12@gmail.com?subject=Contact from website&body=Name - "+name+"%0d%0a Message - %0d%0a"+msg;
 }
 
 function expand(){
   $('#contact-form').collapse('show');
 }
 
-}
-
 $('#collapsingNavbar3').on('show.bs.collapse', function () {
-  $('.smart-scroll').css({opacity: 1});
+  $('.smart-scroll').css({"opacity": "1", "background-color": "#E7EBFE"});
 });
 
 $('#collapsingNavbar3').on('hide.bs.collapse', function () {
-  $('.smart-scroll').css({opacity: 0.75});
+  if(scroll_top == 0){
+    $('.smart-scroll').css({"background-color": "#e3fdfd", "opacity": "1"});
+  }
+    else{
+    $('.smart-scroll').css({"opacity": "0.75", "background-color": "#e3fdfd" });
+  }
 });
