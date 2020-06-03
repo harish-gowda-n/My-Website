@@ -3,34 +3,35 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harish Gowda N</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@700&family=Montserrat:wght@500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6e2e540c61.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- Navigation Bar -->
   <div class="container" style="text-align: center">
-    <nav class="navbar navbar-light navbar-expand-lg justify-content-center smart-scroll" style="width: 80%; margin: auto">
+    <nav class="navbar navbar-light navbar-expand-lg justify-content-center smart-scroll nv">
     <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">
-        <img src="images/me.png" alt="" height="60vw">
+        <img src="images/me.png" alt="" height="50vw">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+    <div class="navbar-collapse collapse in w-100" id="collapsingNavbar3">
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact-form" onclick="expand();">Contact</a>
+                <a class="nav-link" href="#contact-form" onclick="expandContact();">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://drive.google.com/open?id=1WsCqDAYJOxhWU2apbtviEiHrJHO4TIba" target="_blank">Resume</a>
@@ -41,7 +42,7 @@
 </div>
     <!-- Name and background image -->
   <div class="topcont" id="top">
-    <img class="bg-img img-fluid" src="images/cityscapes2ed.jpg" alt="">
+    <img class="bg-img" src="images/cityscapes2ed.jpg" alt="">
     <span class="title">
       <h1>I am Harish.</h1>
       <h2>a <u>pro</u>grammer.</h2>
@@ -129,14 +130,28 @@
     </div>
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Instagram <i class="fab fa-instagram"></i></a>
-    <a class="footer-link" href="https://www.linkedin.com/in/harish-gowda-n">LinkedIn <i class="fab fa-linkedin"></i></a>
-    <a class="footer-link" href="https://twitter.com/Harish_Gowda_N">Twitter <i class="fab fa-twitter"></i></a>
-    <a class="footer-link" href="https://github.com/harish-gowda-n">GitHub <i class="fab fa-github"></i></a>
+    <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <a class="footer-link" href="https://www.linkedin.com/in/harish-gowda-n">LinkedIn <i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="col-3">
+        <a class="footer-link" href="https://twitter.com/Harish_Gowda_N">Twitter <i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="col-3">
+        <a class="footer-link" href="https://github.com/harish-gowda-n">GitHub <i class="fab fa-github"></i></a>
+      </div>
+      <div class="col-3">
+        <a class="footer-link" href="https://www.instagram.com/ambient_portraiture_xox/?hl=en/">Instagram <i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+        <br>
     <p class="copyrights">© 2020 Harish Gowda.</p>
   </div>
+  </div>
+    
+<script src="app.js" charset="utf-8"></script>
 
-  <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
