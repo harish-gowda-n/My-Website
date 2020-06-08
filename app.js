@@ -1,6 +1,4 @@
 
-$(document).ready(function(){
-
 $('body').css('padding-top', $('.navbar-custom').outerHeight() + 'px');
 
 if ($('.smart-scroll').length > 0) {
@@ -54,5 +52,4 @@ $('#collapsingNavbar3').on('hidden.bs.collapse', function () {
     else{
     $('.smart-scroll').css({"opacity": "0.75", "background-color": "#e3fdfd" });
   }
-});
 });
